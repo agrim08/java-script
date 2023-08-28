@@ -1,4 +1,3 @@
-// alert("hello");
-// alert("Good Morning");
-alert("Agrim");
-document.body.innerHTML = "hello";
+// some basic commands:
+alert("hello");
+console.log(Math.round(2.3)); //rounding off a number

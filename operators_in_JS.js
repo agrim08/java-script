@@ -23,3 +23,14 @@ console.log(ageme >= 20);
 const isFullage = ageme >= 20; // this variable is holding a boolean value
 
 console.log(now - 1996 > now - 2005);
+
+// operator precedence:
+// 1. mathematical operators have higher precedence than comparison.
+// 2. operators generally executed from left to right.
+
+let a, b;
+a = b = 25 - 10 - 5; //a = b = 10, a = 10
+console.log(a, b);
+
+const avgAge = (ageme + ageneha) / 2;
+console.log(avgAge);

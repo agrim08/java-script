@@ -11,18 +11,6 @@ console.log($function);
 
 let PI = 3.1415;
 
-//datatypes in js:
-let javaIsFun = true;
-console.log(javaIsFun);
-console.log(typeof javaIsFun);
-
-let year;
-console.log(typeof year);
-year = 2023;
-console.log(typeof year);
-
-console.log(typeof null);
-
 // different types of variables;
 let statement = "value of this variable can be chnaged example age";
 statement = "new value";

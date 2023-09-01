@@ -1,6 +1,0 @@
-Java script is high level, object oriented programming language.
-object oriented :- based on objects for storing most kind of data.
-
-The Role of JS in Web Development:-
-1. Dynamic effect and web applications in browsers
-2. Front end web applications.

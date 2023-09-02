@@ -6,7 +6,7 @@
 // 5. null:- also means empty value.
 // 6. symbol:- unique value and cannot be changed.
 // 7. bigInt:- larger ints.
-
+console.log(abc);
 let javaIsFun = true;
 console.log(javaIsFun);
 console.log(typeof javaIsFun);

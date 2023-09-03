@@ -8,3 +8,12 @@ if (isEnough) {
   const yearsLeft = 18 - age;
   console.log(`agrim is too young wait aonther ${yearsLeft} years`);
 }
+
+const birthyear = 1998;
+let century;
+if (birthyear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);

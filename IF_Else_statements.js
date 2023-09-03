@@ -10,7 +10,7 @@ if (isEnough) {
 }
 
 const birthyear = 1998;
-let century;
+let century; //variable should be defined before
 if (birthyear <= 2000) {
   century = 20;
 } else {

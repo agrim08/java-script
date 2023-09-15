@@ -24,3 +24,4 @@ console.log(appleJuice);
 
 const appleorangeJuice = fruitprocessor(2, 4);
 console.log(appleorangeJuice);
+//console.log() is also a built in function :D

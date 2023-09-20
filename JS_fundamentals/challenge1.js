@@ -1,7 +1,7 @@
 const calcAvg = (a, b, c) => (a + b + c) / 3;
 
-const scrDolphin = calcAvg(44, 23, 71);
-const scrkolas = calcAvg(49, 54, 65);
+let scrDolphin = calcAvg(44, 23, 71);
+let scrkolas = calcAvg(49, 54, 65);
 console.log(scrDolphin, scrkolas);
 
 const chechWinner = function (avgDolphin, avgKoals) {
@@ -13,4 +13,11 @@ const chechWinner = function (avgDolphin, avgKoals) {
     console.log("No one wins...");
   }
 };
+chechWinner(scrDolphin, scrkolas);
+
+//test 2:
+
+scrDolphin = calcAvg(85, 54, 41);
+scrkolas = calcAvg(23, 34, 27);
+console.log(scrDolphin, scrkolas);
 chechWinner(scrDolphin, scrkolas);

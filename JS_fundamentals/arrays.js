@@ -29,3 +29,12 @@ const year2 = [1990, 1991, 1992, 2025];
 console.log(calcage(year2[0]));
 console.log(calcage(year2[2]));
 console.log(calcage(year2[3]));
+
+const age = [
+  calcage(year2[0]),
+  calcage(year2[1]),
+  calcage(year2[2]),
+  calcage(year2[3]),
+];
+
+console.log(age);

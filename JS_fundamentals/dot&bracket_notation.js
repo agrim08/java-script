@@ -36,6 +36,6 @@ console.log(Agrim);
 
 //challenge
 console.log(
-  `${Agrim.firstname} has 3 friends, ${Agrim.friends} and his best friend is 
+  `${Agrim.firstname} has ${Agrim.friends.length} friends, ${Agrim.friends} and his best friend is 
 ${Agrim.friends[0]}`
 );

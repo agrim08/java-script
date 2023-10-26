@@ -8,7 +8,7 @@ const agrim =
 console.log(agrim);
 
 //another way of same 'template literals'
-const agrimnew = `i'm ${firstName}, a ${year - birthyear} years old ${job}!`;
+const agrimnew = `I'm ${firstName}, a ${year - birthyear} years old ${job}!`;
 console.log(agrimnew);
 
 console.log(`string

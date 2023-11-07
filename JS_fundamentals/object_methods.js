@@ -6,14 +6,14 @@ const Agrim = {
   friends: ["tanishq", "Sachi", "Prashant"],
   hasDl: true,
 
-  //   calcAge: function (birthyear) {
-  //     return 2023 - birthyear;
-  //   },
+  calcAge: function (birthyear) {
+    return 2023 - birthyear;
+  },
 
-  //   calcAge: function () {
-  //     // console.log(this);
-  //     return 2023 - this.birthyear;
-  //   },
+  calcAge: function () {
+    // console.log(this);
+    return 2023 - this.birthyear;
+  },
   calcAge: function () {
     this.age = 2023 - this.birthyear;
     return this.age;

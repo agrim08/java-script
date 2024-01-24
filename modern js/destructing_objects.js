@@ -38,7 +38,7 @@ restraunt.orderDelievry({
   starterIndex: 2,
 });
 
-const { Name, openingHours, categories } = restraunt;
+const { Name, openingHours, categories, location, name } = restraunt;
 console.log(Name, openingHours, categories);
 
 const {

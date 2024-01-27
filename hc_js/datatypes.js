@@ -7,5 +7,10 @@ const age = 19; //int
 const mature = true; //bolean
 
 //symbol => unique
+const id = Symbol("123");
+const anotherId = Symbol("123");
+
+console.log(id === anotherId);
+
 //objects
 console.log(typeof null);

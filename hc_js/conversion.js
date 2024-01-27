@@ -5,16 +5,16 @@ let test2 = undefined;
 // console.log(typeof score);
 
 let valueInScore = Number(score);
-console.log(typeof valueInScore);
-console.log(valueInScore);
+// console.log(typeof valueInScore);
+// console.log(valueInScore);
 
 let valueIntest = Number(test);
-console.log(typeof valueIntest);
-console.log(valueIntest);
+// console.log(typeof valueIntest);
+// console.log(valueIntest);
 
 let valueInTest2 = Number(test2);
-console.log(typeof valueInTest2);
-console.log(valueInTest2);
+// console.log(typeof valueInTest2);
+// console.log(valueInTest2);
 
 //"33" => 33
 //"33abc" => NaN
@@ -27,7 +27,7 @@ console.log(valueInTest2);
 let isLoggedIn = "";
 
 let boolIsLoggedIn = Boolean(isLoggedIn);
-console.log(boolIsLoggedIn);
+// console.log(boolIsLoggedIn);
 
 // let isLoggedIn = "Agrim";
 
@@ -36,3 +36,12 @@ console.log(boolIsLoggedIn);
 
 // "" => false
 // "Agrim" => true
+
+/********************** OPERATIONS ***********************/
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2");
+console.log(+true);
+console.log(+"");

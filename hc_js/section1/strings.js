@@ -12,7 +12,7 @@ console.log(gameName.__proto__); //accessing prototype
 const newName = gameName.substring(0, 4);
 console.log(newName);
 
-const anotherName = gameName.slice(-6, 1);
+const anotherName = gameName.slice(1, -6);
 console.log(anotherName);
 
 const newString = "     AGRIM     ";
@@ -31,9 +31,9 @@ console.log(gameName.split("-")); //splits the string on basis of passed seperat
 const Name = "Agrim";
 const age = 19;
 
-//console.log(Name + age); Tradition way of concactination.
+// console.log(Name + age); //Tradition way of concactination.
 //dont use !!!
 
 //modern way:
 
-// console.log(`Hello my name is ${Name} and my age is ${age}`);
+console.log(`Hello my name is ${Name} and my age is ${age}`);

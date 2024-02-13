@@ -27,7 +27,7 @@ let valueInTest2 = Number(test2);
 let isLoggedIn = "";
 
 let boolIsLoggedIn = Boolean(isLoggedIn);
-// console.log(boolIsLoggedIn);
+console.log(boolIsLoggedIn);
 
 // let isLoggedIn = "Agrim";
 

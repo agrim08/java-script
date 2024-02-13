@@ -5,7 +5,7 @@ const balance = new Number(100);
 // console.log(balance);
 
 // console.log(balance.toString().length);
-// console.log(balance.toFixed(2)); //make sure to use this every time...helps in precision
+console.log(balance.toFixed(2)); //make sure to use this every time...helps in precision
 
 const otherNumber = 23.89956;
 // console.log(otherNumber.toPrecision(3));

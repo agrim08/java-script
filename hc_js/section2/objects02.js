@@ -30,7 +30,7 @@ const Obj2 = { 3: "a", 4: "b" };
 // console.log(returnedObj);
 // console.log(returnedObj == Obj3); //to check that o/p is same despite of not using {}
 
-const Obj3 = { ...Obj1, ...Obj2 };
+const Obj3 = { ...Obj1, ...Obj2 }; //use this method **!!
 // console.log(Obj3);
 
 console.log(tinderUser);

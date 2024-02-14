@@ -19,7 +19,7 @@ const Agrim = [
 for (let i = 0; i < Agrim.length; i += 1) {
   console.log(Agrim[i]);
 
-  //   types[i] = typeof Agrim[i];
+  types[i] = typeof Agrim[i];
   types.push(typeof Agrim[i]);
 }
 console.log(types);
@@ -39,6 +39,7 @@ for (let i = 0; i < Agrim.length; i += 1) {
   console.log(Agrim[i], typeof Agrim[i]);
 }
 
+console.log("\n");
 console.log("BREAK WITH NUMBERS 😁");
 for (let i = 0; i < Agrim.length; i += 1) {
   if (typeof Agrim[i] === "number") break;

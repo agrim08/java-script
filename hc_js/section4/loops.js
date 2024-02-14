@@ -17,3 +17,5 @@ for (let i = 0; i <= 10; i++) {
     // console.log(`Inner loop value ${j} and outer loop value ${i}`);
   }
 }
+
+//learn more from JS_fundamentals forlder !!

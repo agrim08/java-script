@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn | DOM</title>
+</head>
+<body style = "background-color: black; color: white;",>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    // function addLang(langName) {
+    //     const li =document.createElement('li')
+    //     li.innerHTML = `${langName}`
+    //     document.querySelector('.language').appendChild(li)
+    // }
+    // addLang("python")
+    // addLang("C++")
+
+    //optimized solution:
+    function addOptiLang(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang("python")
+    addOptiLang("c++")
+
+    //edit values:
+    const secondLang = document.querySelector('li:nth-child(2)')
+    const newLi = document.createElement('li')
+    newLi.textContent = "Ruby"
+    secondLang.replaceWith(newLi)
+
+    //edit again:
+    const firstLang = document.querySelector('li:nth-child(1)')
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove values:
+    const lastLang = document.querySelector('li:nth-child(3)')
+    lastLang.remove();
+</script>

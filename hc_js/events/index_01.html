@@ -63,6 +63,11 @@
     //Avoid injecting JS events directly in HTML tags, it creats problem in bigger codes
     //attachEvent()
     //jQyery on
+
+    //learn: type of events, timestap, defaultPrevented, target, toElement, srcElement, currentTarget
+    //clientX, clientY, screenX, screenY
+    //altKey, ctrlKey, keyCode
+
     //.
     //.
     //.
@@ -73,9 +78,82 @@
     document.getElementById("owl").addEventListener(
       "click",
       function (e) {
-        alert("owl clicked");
+        //alert("owl clicked");
+        //console.log(e);
       },
       false
     ); //false is the third parameter which is default
+
+    //example to learn event propogation:
+
+    //false:
+    document.getElementById("images").addEventListener(
+      "click",
+      function (e) {
+        //console.log("clicked inside the ul");
+        //e.stopPropagation();
+      },
+      false
+    );
+    document.getElementById("owl").addEventListener(
+      "click",
+      function (e) {
+        //console.log("owl clicked");
+        //e.stopPropagation(); // to stop propogation
+      },
+      false
+    );
+    //as owl is also a part of ul, then ul wala event should also activate as we click on owl
+    //so, first we see owl clicked and then clicked inside the ul, this is called event bubbling(bubble niche se upr grow hota h)
+
+    //true:
+    document.getElementById("images").addEventListener(
+      "click",
+      function (e) {
+        //console.log("clicked inside the ul");
+      },
+      true
+    );
+    document.getElementById("owl").addEventListener(
+      "click",
+      function (e) {
+        //console.log("owl clicked");
+      },
+      true
+    );
+    //here the order is  top to bottom:
+    //this is called event capturing
+
+    //.
+    //.
+    //.
+    //prevent default
+    document.getElementById("google").addEventListener(
+      "click",
+      function (e) {
+        //console.log("google clicked");
+        e.preventDefault(); // by default the link tag will open the google, but after this, it is prevented
+        //e.stopPropagation();
+      },
+      false
+    );
+    //.
+    //.
+    //.
+    //small project:
+    document.getElementById("images").addEventListener(
+      "click",
+      function (e) {
+        console.log(e.target.parentNode.tagName);
+
+        if (e.target.tagName === "IMG") {
+          console.log(e.target.tagName);
+          const removeElement = e.target.parentNode;
+          removeElement.remove();
+        }
+      },
+      false
+    );
+    //removeElement.parentNode.removeChild(removeElement);
   </script>
 </html>

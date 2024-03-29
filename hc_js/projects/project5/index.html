@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+  </head>
+  <body style="background-color: #414141; color: white">
+    <h1 id="heading">hello There</h1>
+    <button id="stop">Cancel</button>
+    <button id="start">Start</button>
+  </body>
+  <script>
+    const sayName = function () {
+      console.log("Agrim");
+    };
+    let startThis;
+
+    document.querySelector("#start").addEventListener(
+      "click",
+      function (e) {
+        startThis = setInterval(sayName, 1000);
+      },
+      false
+    );
+    document.querySelector("#stop").addEventListener(
+      "click",
+      function (e) {
+        const endThis = clearInterval(startThis);
+      },
+      false
+    );
+  </script>
+</html>

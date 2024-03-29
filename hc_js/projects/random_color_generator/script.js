@@ -12,11 +12,13 @@ const randomColor = function () {
 let ColorID;
 
 const startChangingClr = function () {
-  console.log("Hii");
   const changeBgColor = function () {
     document.body.style.backgroundColor = randomColor();
   };
-  ColorID = setInterval(changeBgColor, 1000);
+  if (!ColorID) {
+    ColorID = setInterval(changeBgColor, 1000);
+  }
+  console.log("Hii");
 };
 
 const stopChangingClr = function () {

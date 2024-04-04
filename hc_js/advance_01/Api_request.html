@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <h1>LEARNING API</h1>
+  </body>
+
+  <script>
+    const requestURl = "https://api.github.com/users/agrim08";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestURl);
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState); //this will print the state whenever it changes
+      if (xhr.readyState === 4) {
+        // console.log(this.responseText); // "this" tells that we are working on current context
+        //const data = this.responseText;
+        //console.log(typeof data); //we have to convert this into object to access all data;
+
+        const data = JSON.parse(this.responseText);
+        console.log("your githib followers are ", data.followers);
+      }
+    };
+
+    xhr.send();
+  </script>
+</html>

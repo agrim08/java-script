@@ -29,3 +29,11 @@ Learn self:
 - Encapsulation
 - Inheritance
 - Polymorphism
+
+## new keyword:
+
+- steps:
+- an empty object is created which is called an instance.
+- a constructor function is called
+- all keywords and expression are injected to "this"
+- output is generated

@@ -17,11 +17,11 @@ promiseOne.then(() => {
 //type 2:
 new Promise((resolve, reject) => {
   setTimeout(() => {
-    //console.log("Async task is completed");
+    // console.log("Async task is completed");
     resolve();
   }, 1000);
 }).then(() => {
-  //console.log("completed");
+  // console.log("completed");
 });
 
 //type 3:
@@ -32,7 +32,7 @@ const promiseThree = new Promise((resolve, reject) => {
 });
 
 promiseThree.then((user) => {
-  //console.log(user);
+  console.log(user);
 });
 
 //type 4:
@@ -81,24 +81,24 @@ const promiseFive = new Promise((resolve, reject) => {
 async function consumePromiseFive() {
   try {
     const respnse = await promiseFive;
-    console.log(respnse);
+    // console.log(respnse);
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 }
 consumePromiseFive();
 
-//type 6:
-// async function gettingUserData() {
-//   try {
-//     const respnse = await fetch("https://api.github.com/users/agrim08");
-//     const data = await respnse.json();
-//     console.log(data);
-//   } catch (error) {
-//     console.log("E: ", error);
-//   }
-// }
-// gettingUserData();
+// type 6:
+async function gettingUserData() {
+  try {
+    const respnse = await fetch("https://api.github.com/users/agrim08");
+    const data = await respnse.json();
+    console.log(data);
+  } catch (error) {
+    console.log("E: ", error);
+  }
+}
+gettingUserData();
 
 //type 7:
 fetch("https://api.github.com/users/agrim08")
@@ -106,8 +106,8 @@ fetch("https://api.github.com/users/agrim08")
     return respnse.json();
   })
   .then((data) => {
-    console.log(data);
+    // console.log(data);
   })
   .catch((error) => {
-    console.log(error);
+    // console.log(error);
   });

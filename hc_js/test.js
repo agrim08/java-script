@@ -9,9 +9,12 @@
 
 getname();
 console.log(getname);
-console.log(x);
+// console.log(x);
 
 let x = 10;
 function getname() {
   console.log("hello");
 }
+
+let a = [];
+console.log(typeof a);

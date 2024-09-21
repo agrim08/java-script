@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Elsie Swash Caps", serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-image: url("../resource/bg-img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+.logout {
+  display: flex;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-left: 20px;
+  background: red;
+  padding: 14px;
+  border-radius: 6px;
+  color: white;
+  align-self: flex-end;
+  margin-right: 24px;
+  margin-top: 24px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.wrapper h1 {
+  font-weight: 600;
+  font-size: 50px;
+  color: purple;
+  text-align: justify;
+  text-decoration: solid;
+  text-decoration: underline;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin-top: 50px;
+}
+.new-task {
+  display: flex;
+  background: transparent;
+  text-align: justify;
+  font-size: 20px;
+  box-shadow: 1px black;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+.new-task2 {
+  display: flex;
+  background: transparent;
+  text-align: justify;
+  font-size: 20px;
+  box-shadow: 1px black;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+.clear {
+  display: flex;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-left: 20px;
+  background: red;
+  padding: 14px;
+  border-radius: 6px;
+  color: white;
+  align-self: flex-end;
+}
+
+.taskImg {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.new-task-text {
+  width: 80%;
+  text-decoration: solid;
+  color: #000080;
+  font-weight: 500;
+  font-size: 25px;
+}
+.new-task-text2 {
+  width: 80%;
+  text-decoration: solid;
+  /* color: darkorchid; */
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.new-task {
+  position: relative;
+}
+.addNew {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.inputText {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid purple;
+  border-radius: 30px;
+  padding: 20px 45px 20px 20px;
+}
+.hello {
+  margin-bottom: 50px;
+  align-self: center;
+}
+.Hello-User {
+  color: white;
+  text-decoration: double;
+}

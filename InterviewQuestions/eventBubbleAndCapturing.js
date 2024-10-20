@@ -22,5 +22,4 @@ document.getElementById("child").addEventListener(
   },
   true
 );
-
 //* true for CAPTURING and false for BUBBLING

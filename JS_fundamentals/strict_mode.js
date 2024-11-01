@@ -6,5 +6,5 @@ const passTest = true;
 if (passTest) hasDL = true;
 if (hasDL) console.log("I can drive :D");
 
-// const interface = "audio";
-// const private = 55;
+const interface = "audio";
+const private = 55;

@@ -22,10 +22,12 @@ console.log(friend.indexOf("mamta"));
 console.log(friend.includes("agrim"));
 console.log(friend.includes("mamta"));
 
-friend.push(23);
+const x = friend.push(23);
+
 console.log(friend.includes("23")); //does not do type coercion
 console.log(friend.includes(23));
 
 if (friend.includes("agrim")) {
   console.log("You Have a frined called Agrim");
 }
+console.log(x);
